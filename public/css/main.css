@@ -1,4 +1,128 @@
 body {
-  background:black;
+  background:rgb(137, 188, 133);
   color:white;
+  font-size: 25px;
+
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.tracker-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px; 
+}
+
+.left-boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tracker-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center; 
+  align-self: flex-start;
+
+  min-height: 350px;
+  min-width: 350px;
+  margin-left: 5px;
+  margin-top: 50px;
+  border: 7px solid rgba(22, 109, 45, 0.79);
+  padding: 25px;
+
+}
+
+.tracker-edit {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center; 
+  align-self: flex-start;
+
+  height: 350px;
+  width: 550px;
+  margin-left: 5px;
+  margin-top: 20px;
+  border: 7px solid rgba(22, 109, 45, 0.79);
+  padding: 0px;
+
+}
+
+.tracker-results {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start; 
+
+  min-height: 400px;
+  width: 1000px;
+  margin-top: 50px;
+  border: 7px solid rgba(22, 109, 45, 0.79);
+  padding: 25px;
+}
+
+input {
+  display: table-cell;
+  margin-bottom: 20px;
+}
+
+.number-input {
+  min-width: 100px;
+}
+
+.results-request {
+  background-color: rgb(137, 186, 63);
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 20px 15px;
+}
+
+td {
+  word-wrap: break-word;     /* Break long words */
+  white-space: normal;       /* Allow wrapping */
+  overflow-wrap: break-word; /* Modern alternative */
+  max-width: 200px;
+
+  vertical-align: middle;
+}
+
+td.number-cell {
+  text-align: center;
+}
+
+th {
+  color:rgba(22, 109, 45, 0.79);
+}
+
+button {
+  background-color: rgb(137, 186, 63); 
+  padding: 6px 12px; 
+  font-size: 16px;
+
+  font-family: "Caprasimo", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.caprasimo-regular {
+  font-family: "Caprasimo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.nunito-font {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }

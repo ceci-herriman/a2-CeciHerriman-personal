@@ -6,13 +6,99 @@
     <script src="js/main.js"></script>
     <link rel="stylesheet" href="css/main.css">
     
-    <!-- get rid of favicon error -->
     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
   </head>
   <body>
-    <form>
-      <input type="text" id="yourname" value="your name here">
-      <button>submit</button>
-    </form>
+    <div class="tracker-container">
+      <div class="left-boxes">
+        <div class="tracker-input">
+          <h1 class="caprasimo-regular"> Movie Rating Entry </h1>
+          <form class="form-inputs" id="inputForm">
+            <div class="form-inputs">
+              <label for="name">Enter your movie name here: </label>
+              <input type="text" id="name" required>
+            </div>
+            <div class="form-inputs">
+              <label for="year">Enter your movie year here: </label>
+              <input class="number-input" type="number" id="year" min="1900" max="2025" required>
+            </div>
+              <label for="plotRating">Enter your movie plot rating here: </label>
+              <input class="number-input" type="number" id="plotRating" min="0" max="10" required>
+            <div class="form-inputs">
+              <label for="actingRating">Enter your movie acting rating here: </label>
+              <input class="number-input" type="number" id="actingRating" min="0" max="10" required>
+            </div>
+            <div class="form-inputs">
+              <label for="musicRating">Enter your movie music rating here: </label>
+              <input class="number-input" type="number" id="musicRating" min="0" max="10" required>
+            </div>
+            <div class="form-submit">
+              <input class="caprasimo-regular" id="form-submit" type="submit" value="Submit Rating" style="background-color: rgb(106, 144, 48); padding: 10px 20px; font-size: 16px; " />
+            </div>
+          </form>
+        </div>
+        <div class="tracker-edit" id="tracker-edit"> 
+          <h3 class="caprasimo-regular"> Edit Section </h3>
+          <table>
+            <thead>
+                <tr style="font-size: 22px;">
+                    <th>Name</th>
+                    <th>Year</th>
+                    <th>Plot Rating</th>
+                    <th>Acting Rating</th>
+                    <th>Music Rating</th>
+                </tr>
+            </thead>
+            <tbody style="font-size: 18px;">
+              <td id="edit-name"> Movie Name </td>
+              <td id="edit-year"> Movie Year </td>
+              <td id="edit-plotRating"> 
+                <input style="width: 60px; height: 20px;" type="number" id="edit-plot" min="0" max="10" required> 
+              </td>
+              <td id="edit-actingRating">
+                <input style="width: 60px; height: 20px;" type="number" id="edit-acting" min="0" max="10" required> 
+              </td>
+              <td id="edit-plotRating"> 
+                <input style="width: 60px; height: 20px;" type="number" id="edit-music" min="0" max="10" required> 
+              </td>
+              <td id="edit-overallRating"> </td>
+            </tbody>
+          </table>
+          <div style="display: flex; flex-direction: row; justify-content: center; align-items: flex-end; gap: 50px;">
+            <button id="edit-submit" style="background-color: rgb(106, 144, 48); padding: 10px 20px; font-size: 16px;">
+              Submit Edits
+            </button>            
+            <button id="edit-cancel" style="background-color: rgb(106, 144, 48); padding: 10px 20px; font-size: 16px;"> 
+              Cancel editing </button>
+          </div>
+        </div>
+      </div>    
+
+
+      <div class="tracker-results">
+        <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 50px;">
+        <h1 class="caprasimo-regular"> Movie Rating Results </h1>
+          <button id="results-request"> See Results </button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Year</th>
+                    <th>Plot Rating</th>
+                    <th>Acting Rating</th>
+                    <th>Music Rating</th>
+                    <th>Overall Rating</th>
+                </tr>
+            </thead>
+            <tbody id="movie-table-body">
+            </tbody>
+          </table>
+      </div>
+    </div>
   </body>
 </html>
