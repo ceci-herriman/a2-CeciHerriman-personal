@@ -113,6 +113,12 @@ button {
   font-style: normal;
 }
 
+#edit-submit, #edit-cancel {
+  background-color: rgb(106, 144, 48); 
+  padding: 10px 20px; 
+  font-size: 16px;
+}
+
 .caprasimo-regular {
   font-family: "Caprasimo", serif;
   font-weight: 400;
