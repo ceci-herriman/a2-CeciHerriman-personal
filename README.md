@@ -10,6 +10,8 @@ For the best viewing experience please adjust your browser zoom to %80 (could va
 
 For CSS positioning, I used flexboxes. I also included fonts found from Google Fonts. Most CSS styling, including rules needed for the positioning and fonts, is located in the main.css file. I used some in-element styling for some small, unique, styling rules to demonstrate using various CSS functionalities, however, most of my styling was done with class selectors (divs/containers, specific inputs, fonts), ID selectors (edit buttons), and general element selectors (styling buttons or tables). 
 
+To complete my project, I used w3Schools for HTML and Javascript references. I also used ChatGPT to help debug my code. 
+
 ## Technical Achievements
 - **Tech Achievement 1**: 
 
