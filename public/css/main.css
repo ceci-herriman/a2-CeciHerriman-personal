@@ -3,14 +3,14 @@ body {
   color:white;
   font-size: 25px;
 
-  font-family: "Nunito", sans-serif;
+  font-family: "Nunito", sans-serif; 
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
 }
 
 .tracker-container {
-  display: flex;
+  display: flex; /* Overarching container organizes sub containers in rows */
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
@@ -18,13 +18,13 @@ body {
 }
 
 .left-boxes {
-  display: flex;
+  display: flex; /* Container for left sections organizes each child div in a column */
   flex-direction: column;
   gap: 20px;
 }
 
 .tracker-input {
-  display: flex;
+  display: flex; /* left section sub child, set to specific width and height */
   flex-direction: column;
   justify-content: start;
   align-items: center; 
@@ -40,7 +40,7 @@ body {
 }
 
 .tracker-edit {
-  display: flex;
+  display: flex; /* left section sub child, set to specific width and height */
   flex-direction: column;
   justify-content: start;
   align-items: center; 
@@ -56,7 +56,7 @@ body {
 }
 
 .tracker-results {
-  display: flex;
+  display: flex; /* right section, set to specific width and height */
   flex-direction: column;
   justify-content: start;
   align-items: start; 
@@ -69,38 +69,12 @@ body {
 }
 
 input {
-  display: table-cell;
+  display: table-cell; /* for better behavior in tables */
   margin-bottom: 20px;
 }
 
 .number-input {
   min-width: 100px;
-}
-
-.results-request {
-  background-color: rgb(137, 186, 63);
-}
-
-table {
-  border-collapse: separate;
-  border-spacing: 20px 15px;
-}
-
-td {
-  word-wrap: break-word;     /* Break long words */
-  white-space: normal;       /* Allow wrapping */
-  overflow-wrap: break-word; /* Modern alternative */
-  max-width: 200px;
-
-  vertical-align: middle;
-}
-
-td.number-cell {
-  text-align: center;
-}
-
-th {
-  color:rgba(22, 109, 45, 0.79);
 }
 
 button {
@@ -114,9 +88,35 @@ button {
 }
 
 #edit-submit, #edit-cancel {
-  background-color: rgb(106, 144, 48); 
+  background-color: rgb(106, 144, 48); /* Unique styling for edit buttons */
   padding: 10px 20px; 
   font-size: 16px;
+}
+
+.results-request {
+  background-color: rgb(137, 186, 63);
+}
+
+table {
+  border-collapse: separate; /* Make each table cell have their own border so that we can apply spacing to them */
+  border-spacing: 20px 15px;
+}
+
+td {
+  word-wrap: break-word;     /* Break long strings and wrap for better spacing in cells with movie names*/
+  white-space: normal;
+  overflow-wrap: break-word;
+  max-width: 200px;
+
+  vertical-align: middle;
+}
+
+td.number-cell {
+  text-align: center;
+}
+
+th {
+  color:rgba(22, 109, 45, 0.79);
 }
 
 .caprasimo-regular {
@@ -124,7 +124,6 @@ button {
   font-weight: 400;
   font-style: normal;
 }
-
 
 .nunito-font {
   font-family: "Nunito", sans-serif;
